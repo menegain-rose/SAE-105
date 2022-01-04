@@ -7,9 +7,9 @@ function bases() {
     return animation.play;
 }
 
-function carrousel() {
+function carrousel8Images() {
 
-    let images = document.querySelectorAll('.imageC');
+    let images = document.querySelectorAll('.image15');
     let d = 2000;
     let delta = 1000;
 
@@ -17,10 +17,22 @@ function carrousel() {
         img.style.zIndex = images.length - ind;
     });
     
-    let animC = anime.timeline({
+    let anim15 = anime.timeline({
+        targets: '.imgalt',
         loop: true,
-        delay: 0
+        direction: 'alternate',
+        easing: 'linear',
+        delay: function(img, ind) {
+            if (ind == 0) return delta;
+            if (ind == 1) return 2*delta + d;
+            return 3*delta + 2*d;
+        }
     });
+    anim15.add({
+        translateX: [{value: 500, duration: d, easing: 'easeInOutSine'}, 
+                     {value: 500, duration: 0, delay: delta}]
+    });
+}
 
     animC.add({
         targets: images,
