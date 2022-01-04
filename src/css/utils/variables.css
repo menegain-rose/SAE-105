@@ -1,0 +1,27 @@
+:root {
+    /* Color styles */
+    --primary: rgba(71, 71, 64, 1);
+    --secondary: rgba(20, 20, 20, 1);
+    --black: rgba(0, 0, 0, 1);
+    --wihte: rgba(255, 255, 255, 1);
+    --titl: rgba(255, 235, 10, 1);
+    --text-contact: rgba(165, 165, 162, 1);
+
+    /* Text-size styles */
+    /* base font-size: base (16px) */
+    --title-xxl: 1.75rem;
+    --title-xl: 1.375rem;
+    --title-l: 1.25rem;
+    --text: 0.9375rem;
+    --text-footer: 0.8125rem;
+
+    /* Font-family style */
+    --font-mono: 'Black-Ops-One';
+    --font-sans-serif: 'Komika Text';
+
+    /* Espaces */
+    --space1x: 17px;
+    --space2x: 20px;
+    --space3x: 22px;
+    --space4x: 50px;
+}

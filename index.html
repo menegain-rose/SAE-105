@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site SAE105 BATCARBONE">
+
+    <title>BATCARBONE</title>
+
+    <link rel="stylesheet" href="/src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="public/img/header-footer/logosite.svg" alt="logo du site"> 
+
+        <span>BATCARBONE</span>
+
+        <button class="open_navigation" x-on:click="open = !open">
+            <span></span>
+        </button>
+
+        <!-- Menu -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">BATCARBONE</a>
+                </li>
+                <li>
+                    <a href="article1.html">BATMAN, LE JUSTICIER ANTI-ÉCOLOGIE</a>
+                </li>
+                <li>
+                    <a href="article2.html">L'ARGENT MÈNE À LA POLLUTION</a>
+                </li>
+                <li>
+                    <a href="article3.html">CRÉER SA PROPRE ÉNERGIE</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+                <li>
+                    <a href="a_propos.html">A PROPOS</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- Introduction  -->
+        <img src="public/img/home-page/fond.png" alt="Image-intro">
+        <section id="intro">
+            <h1>Bienvenue sur BATCARBONE</h1>
+            <p>
+                Le site alliant Batman et écologie,<br>
+                empreinte carbon et énergie <br>
+                renouvelable
+            </p>
+        </section>
+        <img src="public/img/home-page/batchevron.png" alt="logo-batman">
+
+        <!-- block articles -->
+        <section id="articles">
+            <article>
+                <div class="content">
+                    <h4>Batman, le justicier anti-écologie</h4>
+                    <img src="public/img/autres-projets/btrang.png" alt="logo-batman">
+                </div>
+                <img src="public/img/article1/fondarticle1.png" alt="fondarticle1">
+                <div>
+                    <p>
+                        Le justicier masqué est incroyable <br>
+                        en mission. Mais la pollution qu'il <br>
+                        dégage l'est aussi ! Découvrez le <br>
+                        Bilan Carbone de Batman.
+                    </p>
+                    <a href="article1.html" class="fab">Lire la suite !</a>
+                </div>
+            </article>
+
+            <article>
+                <div class="content">
+                    <h4>L'argent mène à la pollution</h4>
+                    <img src="public/img/autres-projets/btrang.png" alt="logo-batman">
+                </div>
+                <img src="public/img/article2/fondarticle2.png" alt="fondarticle2">
+                <div>
+                    <p>
+                        Notre consommation électrique et <br>
+                        la pollution qu'on crée augmente de <br>
+                        plus en plus. Comment peut-on <br>
+                        réduire tout ça ?
+                    </p>
+                    <a href="article1.html" class="fab">Lire la suite !</a>
+                </div>
+            </article>
+
+            <article>
+                <div class="content">
+                    <h4>Créer son énergie renouvelable ?</h4>
+                    <img src="public/img/autres-projets/btrang.png" alt="logo-batman">
+                </div>
+                <img src="public/img/article3/fondarticle3.jpg" alt="fondarticle3">
+                <div>
+                    <p>
+                        Réduire votre consommation est <br>
+                        trop compliqué ? Créez votre <br>
+                        propre énergie renouvelable ! C'est <br>
+                        de plus en plus simple...
+                    </p>
+                    <a href="article1.html" class="fab">Lire la suite !</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer> 
+            <h5>PierrePolJ</h>
+            <img class="mmilogo" src="public/img/header-footer/logomminoir.svg" alt="logo-MMI"> 
+            <img class="iconsmail" src="/public/img/header-footer/gmail.svg" alt="logo-e-mail">
+            <img class="iconstwt" src="/public/img/header-footer/tw.svg" alt="logo-twitter">
+            <img class="iconsfcb" src="/public/img/header-footer/fb.svg" alt="logo-facebook">
+            <p>
+                Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de Montbéliard.
+            </p>
+    </footer>
+</body>
+</html>
