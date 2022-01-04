@@ -5,13 +5,20 @@ header {
     background-color: var(--secondary);
     padding: 20px 5px;
     height: 53px;
+    padding-top: 40px;
+    z-index: 10;
 }
 
-header > span {
+header > h1 {
     font-size: var(--title-xxl);
     font-family: var(--font-mono);
     font-weight: normal;
     line-height: 1.1;
+    position: absolute;
+    width: 271px;
+    height: 30px;
+    left: 75px;
+    top: 1px;
 }
 
 h1 {
@@ -23,5 +30,76 @@ h1 {
 }
 
 header > img {
+    width: 59px;
+    height: 34px;
+}
 
+
+
+.open_navigation {
+    position: absolute;
+    background-color: transparent; /* transparent + border none car bouton */
+    border: none;
+    top: 20px;
+    right: 15px;
+    width: 45px; /* Comme 0 contenu on defini une largeur et hauteur */
+    height: 25px;
+    display: flex; /* Positionnement flex, regarder flexboxfroggy */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.open_navigation::before,
+.open_navigation::after,
+.open_navigation span {
+    content: "";
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--titl);
+    border-radius: 5px; /* Arrondie des barres */
+    transition: transform .4s, opacity .4s; /* Definition d'un effet de transition */
+}
+
+.open-menu .open_navigation span {
+    opacity: 0; /* Jouer avec l'opacité si on doit faire un effet de transition (a cumuler avec visibility: hidden si besoin) */
+}
+
+.open-menu .open_navigation::before {
+    transform: rotate(45deg) translate(9px, 9px); /* rotation + translation */
+}
+
+.open-menu .open_navigation::after {
+    transform: rotate(-45deg) translate(6px, -7px);
+}
+
+/**
+ * Menu 
+ */
+header > nav {
+    position: fixed;
+    top: 170px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 170px); /* Calculer automatiquement la hauteur en fonction de la hauteur du header */
+    background-color: #141414;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .4s, opacity .4s; /* Definition d'un effet de transition */
+}
+
+.open-menu {
+    overflow: hidden;
+}
+
+.open-menu header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.open-menu header > nav {
+    opacity: 1;
+    visibility: visible;
 }

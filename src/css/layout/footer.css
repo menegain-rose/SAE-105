@@ -1,14 +1,20 @@
 footer {
     position: relative;
     background-color: var(--secondary); /*changer les couleur et les padding pour avoir ceux de ton projet*/
-    padding: 10px;
+    padding: 20px;
     padding-bottom: 6px;
+    padding-top: 15px;
   } 
 
   footer > h5 {
     font-size: var(--title-l);
     font-family: var(--font-sans-serif);
     color: white;
+    position: absolute;
+    left: 13.33%;
+    right: 68%;
+    top: 8%;
+    bottom: 64.49%;
   }
 
   footer > p {
@@ -18,11 +24,28 @@ footer {
     font-family: var(--font-sans-serif);
 }
 
-footer > img {
-    height: ;
+.iconsmail {
+    width: 42px;
+    height: 29,08px;
 }
+
+.iconstwt {
+    width: 42px;
+    height: 29,08px;
+}
+
+.iconsfcb {
+    width: 42px;
+    height: 29,08px;
+}
+
 .mmilogo {
     height: 70px;
+}
+
+footer > img {
+    position: relative;
+    left: 40.53%;
 }
 
 

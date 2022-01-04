@@ -11,15 +11,40 @@
     <link rel="stylesheet" href="/src/css/style.css"/>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body>
+<body x-data="{ open: false }" :class="{ 'open-menu': open }">
     <header>
         <img src="public/img/header-footer/logosite.svg" alt="logo du site"> 
 
-        <span>BATCARBONE</span>
+        <h1>BATCARBONE</h1>
 
         <button class="open_navigation" x-on:click="open = !open">
             <span></span>
         </button>
+
+        <!-- Menu -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">BATCARBONE</a>
+                </li>
+                <li>
+                    <a href="article1.html">BATMAN, LE JUSTICIER ANTI-ÉCOLOGIE</a>
+                </li>
+                <li>
+                    <a href="article2.html">L'ARGENT MÈNE À LA POLLUTION</a>
+                </li>
+                <li>
+                    <a href="article3.html">CRÉER SA PROPRE ÉNERGIE</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+                <li>
+                    <a href="a_propos.html">A PROPOS</a>
+                </li>
+            </ul>
+        </nav>
+
     </header>
 
     <main>
@@ -146,17 +171,17 @@
             <article>
                 <div class="content">
                     <h4>L'argent mène à la pollution</h4>
-                    <img src="public/img/autres-projets/btrang.png" alt="logo-batman">
+                    <img class="minilogo" src="public/img/autres-projets/btrang.png" alt="logo-batman">
                 </div>
-                <img src="public/img/article2/fondarticle2.png" alt="fondarticle2">
+                <img class="imageart" src="public/img/article2/fondarticle2.png" alt="fondarticle2">
                 <div>
-                    <p>
+                    <p class="propoartblock">
                         Notre consommation électrique et <br>
                         la pollution qu'on crée augmente de <br>
                         plus en plus. Comment peut-on <br>
                         réduire tout ça ?
                     </p>
-                    <a href="article1.html" class="fab">Lire la suite !</a>
+                    <a href="article1.html" class="btn">Lire la suite !</a>
                 </div>
             </article>
         </section>
@@ -197,14 +222,14 @@
     </main>
 
     <footer> 
-            <h5>PierrePolJ</h>
-            <img class="mmilogo" src="public/img/header-footer/logomminoir.svg" alt="logo-MMI"> 
-            <img class="iconsmail" src="/public/img/header-footer/gmail.svg" alt="logo-e-mail">
-            <img class="iconstwt" src="/public/img/header-footer/tw.svg" alt="logo-twitter">
-            <img class="iconsfcb" src="/public/img/header-footer/fb.svg" alt="logo-facebook">
-            <p>
-                Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de Montbéliard.
-            </p>
-    </footer>
+        <h5>PierrePolJ</h5>
+        <img class="mmilogo" src="public/img/header-footer/logomminoir.svg" alt="logo-MMI"> 
+        <img class="iconsmail" src="/public/img/header-footer/gmail.png">
+        <img class="iconstwt" src="/public/img/header-footer/tw.svg" alt="logo-twitter">
+        <img class="iconsfcb" src="/public/img/header-footer/fb.svg" alt="logo-facebook">
+        <p>
+            Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de Montbéliard.
+        </p>
+</footer>
 </body>
 </html>

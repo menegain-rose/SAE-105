@@ -11,15 +11,40 @@
     <link rel="stylesheet" href="/src/css/style.css"/>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body>
+<body x-data="{ open: false }" :class="{ 'open-menu': open }">
     <header>
         <img src="public/img/header-footer/logosite.svg" alt="logo du site"> 
 
-        <span>BATCARBONE</span>
+        <h1>BATCARBONE</h1>
 
         <button class="open_navigation" x-on:click="open = !open">
             <span></span>
         </button>
+
+        <!-- Menu -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">BATCARBONE</a>
+                </li>
+                <li>
+                    <a href="article1.html">BATMAN, LE JUSTICIER ANTI-ÉCOLOGIE</a>
+                </li>
+                <li>
+                    <a href="article2.html">L'ARGENT MÈNE À LA POLLUTION</a>
+                </li>
+                <li>
+                    <a href="article3.html">CRÉER SA PROPRE ÉNERGIE</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+                <li>
+                    <a href="a_propos.html">A PROPOS</a>
+                </li>
+            </ul>
+        </nav>
+
     </header>
 
     <main>
@@ -107,8 +132,8 @@
             <h4>Batman, le justicier anti-écologie</h4>
                 
             <div>
-                <img src="public/img/article3/logommi.jpg" alt="mmilogo">
-                <p>
+                <img class="imageart" src="public/img/article3/logommi.jpg" alt="mmilogo">
+                <p class="propoartblock">
                     Ce projet vous a plu ? Vous <br>
                     souhaitez lire de nouveaux articles <br>
                     similaires ? Allez voir les autres <br>
@@ -119,14 +144,14 @@
     </main>
 
     <footer> 
-        <h5>PierrePolJ</h>
+        <h5>PierrePolJ</h5>
         <img class="mmilogo" src="public/img/header-footer/logomminoir.svg" alt="logo-MMI"> 
-        <img class="iconsmail" src="/public/img/header-footer/gmail.svg" alt="logo-e-mail">
+        <img class="iconsmail" src="/public/img/header-footer/gmail.png">
         <img class="iconstwt" src="/public/img/header-footer/tw.svg" alt="logo-twitter">
         <img class="iconsfcb" src="/public/img/header-footer/fb.svg" alt="logo-facebook">
         <p>
             Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de Montbéliard.
         </p>
-    </footer>
+</footer>
 </body>
 </html>

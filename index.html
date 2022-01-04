@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="src/css/style.css"/>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body>
+<body x-data="{ open: false }" :class="{ 'open-menu': open }">
     <header>
         <img src="public/img/header-footer/logosite.svg" alt="logo du site"> 
 
@@ -61,18 +61,18 @@
             </div>
         </div>
         </section>
-        <img src="public/img/home-page/batchevron.png" alt="logo-batman">
+        <img class="supperpo" src="public/img/home-page/batchevron.png" alt="logo-batman">
 
         <!-- block articles -->
         <section id="articles">
             <article>
                 <div class="content">
                     <h4>Batman, le justicier anti-écologie</h4>
-                    <img src="public/img/autres-projets/btrang.png" alt="logo-batman">
+                    <img class="minilogo" src="public/img/autres-projets/btrang.png" alt="logo-batman">
                 </div>
-                <img src="public/img/article1/fondarticle1.png" alt="fondarticle1">
+                <img class="imageart" src="public/img/article1/fondarticle1.png" alt="fondarticle1">
                 <div>
-                    <p>
+                    <p class="propoartblock">
                         Le justicier masqué est incroyable <br>
                         en mission. Mais la pollution qu'il <br>
                         dégage l'est aussi ! Découvrez le <br>
@@ -85,11 +85,11 @@
             <article>
                 <div class="content">
                     <h4>L'argent mène à la pollution</h4>
-                    <img src="public/img/autres-projets/btrang.png" alt="logo-batman">
+                    <img class="minilogo" src="public/img/autres-projets/btrang.png" alt="logo-batman">
                 </div>
-                <img src="public/img/article2/fondarticle2.png" alt="fondarticle2">
+                <img class="imageart" src="public/img/article2/fondarticle2.png" alt="fondarticle2">
                 <div>
-                    <p>
+                    <p class="propoartblock">
                         Notre consommation électrique et <br>
                         la pollution qu'on crée augmente de <br>
                         plus en plus. Comment peut-on <br>
@@ -102,11 +102,11 @@
             <article>
                 <div class="content">
                     <h4>Créer son énergie renouvelable ?</h4>
-                    <img src="public/img/autres-projets/btrang.png" alt="logo-batman">
+                    <img class="minilogo" src="public/img/autres-projets/btrang.png" alt="logo-batman">
                 </div>
-                <img src="public/img/article3/fondarticle3.jpg" alt="fondarticle3">
+                <img class="imageart" src="public/img/article3/fondarticle3.jpg" alt="fondarticle3">
                 <div>
-                    <p>
+                    <p class="propoartblock">
                         Réduire votre consommation est <br>
                         trop compliqué ? Créez votre <br>
                         propre énergie renouvelable ! C'est <br>
