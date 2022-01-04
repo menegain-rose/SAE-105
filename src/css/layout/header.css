@@ -1,0 +1,27 @@
+header {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    background-color: var(--secondary);
+    padding: 20px 5px;
+    height: 53px;
+}
+
+header > span {
+    font-size: var(--title-xxl);
+    font-family: var(--font-mono);
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: var(--title-xxl);
+    font-family: var(--font-mono);
+    font-weight: normal;
+    line-height: 1.1;
+    color: var(--titl);
+}
+
+header > img {
+
+}

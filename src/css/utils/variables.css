@@ -3,7 +3,7 @@
     --primary: rgba(71, 71, 64, 1);
     --secondary: rgba(20, 20, 20, 1);
     --black: rgba(0, 0, 0, 1);
-    --wihte: rgba(255, 255, 255, 1);
+    --white: rgba(255, 255, 255, 1);
     --titl: rgba(255, 235, 10, 1);
     --text-contact: rgba(165, 165, 162, 1);
 
@@ -17,7 +17,7 @@
 
     /* Font-family style */
     --font-mono: 'Black-Ops-One';
-    --font-sans-serif: 'Komika Text';
+    --font-sans-serif: 'komika_text_tightregular';
 
     /* Espaces */
     --space1x: 17px;

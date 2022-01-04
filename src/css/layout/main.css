@@ -1,0 +1,50 @@
+main {
+    padding: 0 25px;
+    padding-top: 40px;
+    background-color: var(--primary);
+}
+
+.btn {
+    background-color: var(--titl);
+    text-decoration:none; 
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px var(--secondary);
+    color: var(--text);
+    padding: 51px 271px;
+}
+
+.intro {
+    background-color: var(--titl);
+    text-decoration:none; 
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px var(--secondary);
+    color: var(--text);
+    padding: 5px 10px;
+}
+
+.imginto {
+    width: 375px;
+	height: 617px;
+}
+
+.titreintro {
+    font-size: var(--title-xxl);
+    font-family: var(--font-mono);
+    font-weight: normal;
+    line-height: 1.1;
+    color: var(--titl);
+}
+
+.texte {
+    font-family: var(--font-sans-serif);
+    font-size: var(--text);
+    line-height: 1.6;
+    color: var(--white);
+}
+
+#blockintro {
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    border-radius: 10px;
+    
+}

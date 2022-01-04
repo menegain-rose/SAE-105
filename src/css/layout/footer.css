@@ -1,0 +1,29 @@
+footer {
+    position: relative;
+    background-color: var(--secondary); /*changer les couleur et les padding pour avoir ceux de ton projet*/
+    padding: 10px;
+    padding-bottom: 6px;
+  } 
+
+  footer > h5 {
+    font-size: var(--title-l);
+    font-family: var(--font-sans-serif);
+    color: white;
+  }
+
+  footer > p {
+    text-align: center;
+    font-size: var(--text);
+    color: white;
+    font-family: var(--font-sans-serif);
+}
+
+footer > img {
+    height: ;
+}
+.mmilogo {
+    height: 70px;
+}
+
+
+

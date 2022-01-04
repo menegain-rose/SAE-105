@@ -1,7 +1,6 @@
 /** Importation de la police depuis Google font */
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('base/font.css');
 
 /* Vendors */
 @import url('vendors/normalize.css');
