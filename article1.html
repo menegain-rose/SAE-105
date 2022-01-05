@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="/src/css/style.css"/>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
 </head>
 <body x-data="{ open: false }" :class="{ 'open-menu': open }">
     <header>
@@ -48,16 +50,16 @@
     </header>
 
     <main>
-        <h2>Batman, le justicier anti-écologie</h2>
+        <h2 class="debpage">Batman, le justicier anti-écologie</h2>
 
-        <section id="contenu-art1">
-            <div class="content">
+        <section id="contenu-art">
+            <div>
                 <p>
                     Le justicier masqué est incroyable en mission. <br>
                     Mais la pollution qu'il dégage aussi l'est ! <br>
                     Découvrez le Bilan Carbone de Batman. 
                 </p>
-                <img src="public/img/article1/fondarticle1.png" alt="Image-principale-batman">
+                <img class="imgdebart" src="public/img/article1/fondarticle1.png" alt="Image-principale-batman">
                 <legend>
                     Extrait de l'affiche du film Batman The Dark Knight Rises <br>
                     Source : Amazon
@@ -171,6 +173,7 @@
             <article>
                 <div class="content">
                     <h4>L'argent mène à la pollution</h4>
+                </div>
                     <img class="minilogo" src="public/img/autres-projets/btrang.png" alt="logo-batman">
                 </div>
                 <img class="imageart" src="public/img/article2/fondarticle2.png" alt="fondarticle2">
@@ -195,30 +198,29 @@
                 </p>
             </div>
         </section> 
-        <section>  
+        <section> 
+            <!--carroussel-->
+        <div class="exemples carrousel">
+            <div class="droite155">&nbsp;</div>
             <div class="carrousel">
-                <div class="entete">
-                </div>
-                <div class="droite15">&nbsp;</div>
-                <div class="carrousel">
-                    <div class="imagesC">
-                        <img id="img1" class="imageC imgalt" src="public/img/article1/caroussel/affiche1.jpg"/>
-                        <img id="img2" class="imageC imgalt" src="public/img/article1/caroussel/affiche2.jpg">
-                        <img id="img3" class="imageC imgalt" src="public/img/article1/caroussel/affiche3.jpg"/>
-                        <img id="img4" class="imageC imgalt" src="public/img/article1/caroussel/affiche4.jpg"/>
-                        <img id="img5" class="imageC imgalt" src="public/img/article1/caroussel/affiche5.jpg"/>
-                        <img id="img6" class="imageC imgalt" src="public/img/article1/caroussel/affiche6.jpg"/>
-                        <img id="img7" class="imageC imgalt" src="public/img/article1/caroussel/affiche7.jpg"/>
-                        <img id="img8" class="imageC imgalt" src="public/img/article1/caroussel/affiche2021.png"/>
-                    </div>
+                <div class="images">
+                    <img id="img1" class="image" src="public/img/article1/caroussel/affiche1.jpg"/>
+                    <img id="img2" class="image" src="public/img/article1/caroussel/affiche2.jpg">
+                    <img id="img3" class="image" src="public/img/article1/caroussel/affiche3.jpg"/>
+                    <img id="img4" class="image" src="public/img/article1/caroussel/affiche4.jpg"/>
+                    <img id="img5" class="image" src="public/img/article1/caroussel/affiche5.jpg"/>
+                    <img id="img6" class="image" src="public/img/article1/caroussel/affiche6.jpg"/>
+                    <img id="img7" class="image" src="public/img/article1/caroussel/affiche7.jpg"/>
+                    <img id="img8" class="image" src="public/img/article1/caroussel/affiche2021.png"/>
                 </div>
             </div>
-            <script>
-           
-                carrousel8Images();
-                
-            </script>  
-        </section>
+        </div>
+        <script>
+        
+            carrouselImages();
+                    
+        </script>
+            </section>
     </main>
 
     <footer> 
